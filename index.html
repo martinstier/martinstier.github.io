@@ -12,6 +12,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         header {
@@ -26,11 +36,7 @@
         }
 
         a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        a:hover {
+            color: #1e90ff;
             text-decoration: underline;
         }
 
@@ -45,30 +51,35 @@
 </head>
 
 <body>
-    <header>Martin Stier</header>
+    <div class="container">
+        <header>Martin Stier</header>
 
-    <section>
-        <h2><a href="https://mastier.pythonanywhere.com/" target="_blank">Classified Ads Application</a></h2>
-        <p>Last semester, I worked on a small project where I developed a classified ads application using the Django
-            framework, SQLite, Python, and HTML/CSS. The project involved implementing crispy forms, creating Bootstrap
-            menus, and managing row ownership in a database.</p>
-    </section>
+        <section>
+            <h2><a href="https://mastier.pythonanywhere.com/" target="_blank">Classified Ads Application</a></h2>
+            <p>Last semester, I worked on a small project where I developed a classified ads application using the
+                Django
+                framework, SQLite, Python, and HTML/CSS. The project involved implementing crispy forms, creating
+                Bootstrap
+                menus, and managing row ownership in a database.</p>
+        </section>
 
-    <section>
-        <h2><a href="https://alphathetadeltaumich.org/zeta-class" target="_blank">Alpha Theta Delta Web Development
-                Project</a></h2>
-        <p>I was part of the web development team for a project through the Alpha Theta Delta Professional Design
-            Fraternity. Working alongside a design team, we brought their vision to life by implementing the website
-            according to their specifications, focusing on translating their creative ideas into functional web
-            elements.</p>
-    </section>
+        <section>
+            <h2><a href="https://alphathetadeltaumich.org/zeta-class" target="_blank">Alpha Theta Delta Web Development
+                    Project</a></h2>
+            <p>I was part of the web development team for a project through the Alpha Theta Delta Professional Design
+                Fraternity. Working alongside a design team, we brought their vision to life by implementing the website
+                according to their specifications, focusing on translating their creative ideas into functional web
+                elements.</p>
+        </section>
 
-    <section>
-        <h2><a href="https://mbsacademy.org/" target="_blank">MBS Academy</a></h2>
-        <p>I managed MBS Academy's entire online presence, including their WordPress website, social media accounts, and
-            Mailchimp account for email marketing. I also improved the website's UX, resulting in a 58% increase in
-            sales.</p>
-    </section>
+        <section>
+            <h2><a href="https://mbsacademy.org/" target="_blank">MBS Academy</a></h2>
+            <p>I managed MBS Academy's entire online presence, including their WordPress website, social media accounts,
+                and
+                Mailchimp account for email marketing. I also improved the website's UX, resulting in a 58% increase in
+                sales.</p>
+        </section>
+    </div>
 </body>
 
 </html>
