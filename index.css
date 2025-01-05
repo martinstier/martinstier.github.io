@@ -2,9 +2,75 @@ body {
     font-family: "Computer Modern Serif", serif;
 }
 
-header {}
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
 
-body {
-    /* background-color: rgba(12, 17, 23, 255);
-    color: white; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.name {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.name .tooltiptext {
+    font-size: 12px;
+
+    visibility: hidden;
+    width: 1000px;
+
+    background-color: black;
+    color: #fff;
+
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+}
+
+.name:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.linkedin-icon {
+    color: black;
+}
+
+.linkedin-icon:hover {
+    color: blue;
+}
+
+.email-icon {
+    color: black;
+}
+
+.email-icon:hover {
+    color: blue;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.portrait {
+    padding: 10px;
+}
+
+.portrait .image {
+    width: 20vw;
+    border-radius: 6px;
+}
+
+.drop-button {
+    font-family: "Computer Modern Serif", serif;
+    border: none;
+    background: none;
+    cursor: pointer;
 }

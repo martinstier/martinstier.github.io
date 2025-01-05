@@ -19,34 +19,55 @@
 <body>
     <header class="sticky-header">
         <div class="name">
-            <p><b>Martín Stier</b></p>
+            <p><b>Martín Stier<span class="tooltiptext">Mar-teen Steer</span></b></p>
         </div>
 
-        <a href="mailto:mastier@umich.edu" class="icon-link" aria-label="Email Martin Stier">
-            <i class="fas fa-envelope"></i>
-        </a>
 
-        <a href="https://www.linkedin.com/in/mart%C3%ADn-stier-45b005220/" target="_blank" class="icon-link"
-            aria-label="Martin Stier's LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
+        <div class="icons">
+            <a href="mailto:mastier@umich.edu" class="email-icon" aria-label="Email Martin Stier">
+                <i class="fas fa-envelope"></i>
+            </a>
 
-        <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
+            <a href="https://www.linkedin.com/in/mart%C3%ADn-stier-45b005220/" target="_blank" class="linkedin-icon"
+                aria-label="Martin Stier's LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
+        </div>
     </header>
 
     <main>
 
         <div class="portrait">
-            <img src="files/MartinStierPortrait.jpeg" alt="Martin Stier's portrait" width="100">
+            <img src="files/MartinStierPortrait.jpg" alt="Martin Stier's portrait" class="image">
         </div>
 
         <div class="dropdowns">
 
-            <p>Bio</p>
-            <p>Experience</p>
-            <p>Research</p>
-            <p>Projects</p>
-            <p>Resume</p>
+            <button onclick=showBio() class="drop-button"><i class="fa-solid fa-caret-right"></i>&nbsp;
+                Bio
+            </button>
+
+            <button onclick=showExperience() class="drop-button"><i class="fa-solid fa-caret-right"></i>&nbsp;
+                Experience
+            </button>
+
+            <button onclick=showResearch() class="drop-button">
+                <i class="fa-solid fa-caret-right"></i>&nbsp;
+                Research
+            </button>
+
+            <button onclick=showProjects() class="drop-button"><i class="fa-solid fa-caret-right"></i>&nbsp;
+                Projects
+            </button>
+
+            <a href="files/Resume.pdf" target="_blank">
+                <button class="drop-button">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;
+                    Resume
+                </button>
+            </a>
 
         </div>
 
