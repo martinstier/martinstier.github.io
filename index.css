@@ -1,6 +1,13 @@
 body {
     font-family: "Computer Modern Serif", serif;
     background-color: #FAF9F6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* text-align: center; */
 }
 
 header {
@@ -22,6 +29,7 @@ header {
     font-size: 12px;
 
     visibility: hidden;
+    display: none;
     width: 1000px;
 
     background-color: black;
@@ -35,6 +43,7 @@ header {
 
 .name:hover .tooltiptext {
     visibility: visible;
+    display: inline;
 }
 
 
@@ -66,7 +75,10 @@ main {
     font-family: "Computer Modern Serif", serif;
     border: none;
     background: none;
+    border-radius: 6px;
     cursor: pointer;
+
+    font-size: 20px;
 
     display: block;
     /* width: 100%; */
@@ -76,4 +88,12 @@ main {
 .drop-button:hover {
     color: blue;
     opacity: 0.8;
+}
+
+.drop-text {
+    display: none;
+
+    background-color: lightgrey;
+    border-radius: 6px;
+    padding: 5px;
 }
