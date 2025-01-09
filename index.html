@@ -20,14 +20,20 @@
 
 <body>
     <header class="sticky-header">
-
         <h1>
             <div class="name">
                 <p><b>Martín Stier<span class="tooltiptext">Mar-teen Steer</span></b></p>
             </div>
         </h1>
 
+    </header>
+
+    <nav>
         <div class="icons">
+            <a href="index.html" class="icon" aria-label="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+
             <a href="mailto:mastier@umich.edu" class="icon" aria-label="Email Martin Stier">
                 <i class="fas fa-envelope"></i>
             </a>
@@ -37,10 +43,12 @@
                 <i class="fab fa-linkedin"></i>
             </a>
 
-
             <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
+
         </div>
-    </header>
+    </nav>
+
+    <!-- <hr width="75%" size = "1" color = "black"> -->
 
     <main>
 
@@ -48,45 +56,101 @@
             <img src="files/MartinStierPortrait.jpg" alt="Martin Stier's portrait" class="image">
         </div>
 
+    </main>
+
+    <footer>
+
         <div class="dropdowns">
 
-            <button id="bioButton" class="drop-button" data-target="bio">
+            <button id="bio-drop" class="drop-button" data-target="bio">
                 <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Bio
             </button>
 
-            <p class="drop-text" id="bio">I am Martín hehe! &#128507;</p>
+            <p class="drop-text" id="bio">
+                I am a third year student studying <a href=https://cse.engin.umich.edu>Computer Science</a> at the
+                University of Michigan. <br>
 
+                I am interested in computational social science, social and environmental justice, and data
+                science for social good. <br>
 
-            <button class="drop-button" data-target="experience">
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Experience
-            </button>
-
-            <p class="drop-text" id="experience">I am Martín hehe! &#128507;</p>
-
-            <button class="drop-button" data-target="research">
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Research
-            </button>
-
-            <p class="drop-text" id="research">I am Martín hehe! &#128507;</p>
-
-            <button class="drop-button" data-target="projects">
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Projects
-            </button>
-
-            <p class="drop-text" id="projects"> I am Martín hehe! &#128507;</p>
-
-            <a href="files/Resume.pdf" target="_blank" style="text-decoration:none">
-                <button class="drop-button">
-                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;
-                    Resume
-                </button>
-            </a>
-
-
+                I grew up in Palo Alto, CA and Buenos Aires, Argentina. In my free time I like to enjoy the
+                outdoors.
+            </p>
 
         </div>
 
-    </main>
+        <button id="experience-drop" class="drop-button" data-target="experience">
+            <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Experience
+        </button>
+
+        <!-- <p class="drop-text" id="experience"> -->
+        <ul class="drop-text" id="experience">
+            <li>
+                University of Michigan Physics Department <br>
+                <i class="title">Teaching Assistant, Physics II</i>
+            </li>
+
+            <li>
+                Science Learning Center <br>
+                <i class="title">Study Group Leader, Calculus II &amp; Physics I</i>
+            </li>
+
+            <li>
+                Institute for Social Research <br>
+                <i class="title">Undergraduate Researcher</i>
+            </li>
+
+            <li>
+                Mind Body Studies Academy <br>
+                <i class="title">Web Administrator</i>
+            </li>
+
+            <li>
+                University of Michigan Transportation Research Institute (UMTRI) <br>
+                <i class="title">Undergraduate Research Assistant</i>
+            </li>
+
+        </ul>
+        <!-- </p> -->
+
+        <button id="research-drop" class="drop-button" data-target="research">
+            <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Research
+        </button>
+
+        <ul class="drop-text" id="research">
+            <li>
+                Institute for Social Research <br>
+                <i class="title">Investigating Associations Between Accessibility to Urban Green Spaces and Public
+                    Health Outcomes</i>
+            </li>
+
+            <li>
+                University of Michigan Transportation Research Institute <br>
+                <i class="title">Standardizing terms and measures, etc.</i>
+            </li>
+
+            <li>
+                University of Michigan Transportation Research Institute <br>
+                <i class="title">Bright screens = bad drivers?</i>
+        </ul>
+
+        <button id="projects-drop" class="drop-button" data-target="projects">
+            <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Projects
+        </button>
+
+        <ul class="drop-text" id="projects">
+            <li>
+
+            </li>
+        </ul>
+
+        <a href="files/Resume.pdf" target="_blank" style="text-decoration:none">
+            <button id="resume" class="resume-button">
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;
+                Resume
+            </button>
+        </a>
+    </footer>
 
 </body>
 

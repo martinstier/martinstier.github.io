@@ -1,5 +1,11 @@
+* {
+    /* background-color: #0c1117;
+    color: white; */
+}
+
 body {
     font-family: "Computer Modern Serif", serif;
+
     background-color: #FAF9F6;
 
     display: flex;
@@ -48,6 +54,7 @@ header {
 
 
 .icon {
+    display: inline-block;
     color: black;
 }
 
@@ -80,7 +87,7 @@ main {
 
     font-size: 20px;
 
-    display: block;
+    display: inline;
     /* width: 100%; */
     margin-bottom: 10px;
 }
@@ -90,10 +97,36 @@ main {
     opacity: 0.8;
 }
 
+.resume-button {
+    font-family: "Computer Modern Serif", serif;
+    border: none;
+    background: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    font-size: 20px;
+
+    display: inline;
+    /* width: 100%; */
+    margin-bottom: 10px;
+}
+
+.resume-button:hover {
+    color: blue;
+    opacity: 0.8;
+}
+
 .drop-text {
     display: none;
 
+    width: 50vw;
+
     background-color: lightgrey;
     border-radius: 6px;
-    padding: 5px;
+
+    padding: 10px 22px;
 }
+
+/* .title {
+    font-family: "Computer Modern Sans", sans-serif
+} */
