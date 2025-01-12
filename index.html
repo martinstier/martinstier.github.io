@@ -19,44 +19,64 @@
 </head>
 
 <body>
-    <header class="sticky-header">
-        <h1>
-            <div class="name">
-                <p><b>Martín Stier<span class="tooltiptext">Mar-teen Steer</span></b></p>
-            </div>
-        </h1>
+    <header>
+        <div class="name">
+            <b>
+                Martín Stier
+            </b>
+            <br>
+            <b>
+                <p class="tooltiptext">
+                    Mar-teen Steer
+                </p>
+            </b>
+        </div>
 
-    </header>
-
-    <nav>
-        <div class="icons">
-            <a href="index.html" class="icon" aria-label="Home">
+        <nav>
+            <!-- remove bullet points -->
+            <!-- <ul style="list-style-type: none;" class="icon-list"> -->
+            <div href="index.html" class="icon" aria-label="Home">
                 <i class="fa-solid fa-house"></i>
-            </a>
+            </div>
 
-            <a href="mailto:mastier@umich.edu" class="icon" aria-label="Email Martin Stier">
+            <div href="mailto:mastier@umich.edu" class="icon" aria-label="Email Martin Stier">
                 <i class="fas fa-envelope"></i>
-            </a>
+            </div>
 
-            <a href="https://www.linkedin.com/in/mart%C3%ADn-stier-45b005220/" target="_blank" class="icon"
+            <div href="https://www.linkedin.com/in/mart%C3%ADn-stier-45b005220/" target="_blank" class="icon"
                 aria-label="Martin Stier's LinkedIn">
                 <i class="fab fa-linkedin"></i>
-            </a>
-
+            </div>
             <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
+            <!-- </ul> -->
+        </nav>
+    </header>
 
-        </div>
-    </nav>
-
-    <!-- <hr width="75%" size = "1" color = "black"> -->
+    <hr width="65%" size="1" color="black">
 
     <main>
 
         <div class="portrait">
             <img src="files/MartinStierPortrait.jpg" alt="Martin Stier's portrait" class="image">
-        </div>
 
-        <div class="selected-drop"></div>
+            <div class="selected-drop">
+                <button class="drop-button">
+                    <i class="fa-solid fa-caret-down"></i>&nbsp;&nbsp;Bio
+                </button>
+
+                <p class="default-text">
+                    I am a third year student studying <a href=https://cse.engin.umich.edu>Computer Science</a> at
+                    the
+                    University of Michigan. <br>
+
+                    I am interested in computational social science, social and environmental justice, and data
+                    science for social good. <br>
+
+                    I grew up in Palo Alto, CA and Buenos Aires, Argentina. In my free time I like to enjoy the
+                    outdoors.
+                </p>
+            </div>
+        </div>
 
     </main>
 

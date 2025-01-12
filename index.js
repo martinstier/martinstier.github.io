@@ -2,10 +2,13 @@ const dropButtons = document.querySelectorAll(".drop-button");
 
 dropButtons.forEach(button => {
     button.addEventListener("click", event => {
+
         const targetID = button.getAttribute("data-target");
         const targetElement = document.getElementById(targetID);
 
         const selectedElement = document.querySelector(".selected-drop");
+
+        selectedElement.innerHTML = '';
 
         // Hide any existing drop buttons and their target elements in the selected section
         const selectedDropButtons = selectedElement.querySelectorAll(".drop-button");
