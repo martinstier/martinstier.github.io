@@ -3,7 +3,6 @@
 
 <head>
     <title>Martin Stier's website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Link CSS file -->
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -20,33 +19,45 @@
 
 <body>
     <header>
-        <div class="name">
+        <!-- <div class="name">
             <b>
-                Martín Stier
+                <span class="fullname">
+                    Martín Stier
+
             </b>
             <br>
             <b>
-                <p class="tooltiptext">
+                <p id="name-pronounce" class="tooltiptext">
                     Mar-teen Steer
                 </p>
             </b>
+            </span>
+        </div> -->
+
+        <div class="name">
+            <span class="fullname">
+                <b>Martín Stier</b> <span class="tooltiptext" id="name-pronounce">
+
+                    <b>Mar-teen Steer
+                    </b></span>
+            </span>
         </div>
 
         <nav>
             <!-- remove bullet points -->
             <!-- <ul style="list-style-type: none;" class="icon-list"> -->
-            <div href="index.html" class="icon" aria-label="Home">
+            <a href="index.html" class="icon" aria-label="Home">
                 <i class="fa-solid fa-house"></i>
-            </div>
+            </a>
 
-            <div href="mailto:mastier@umich.edu" class="icon" aria-label="Email Martin Stier">
+            <a href="mailto:mastier@umich.edu" class="icon" aria-label="Email Martin Stier">
                 <i class="fas fa-envelope"></i>
-            </div>
+            </a>
 
-            <div href="https://www.linkedin.com/in/mart%C3%ADn-stier-45b005220/" target="_blank" class="icon"
+            <a href="https://www.linkedin.com/in/martin-stier/" target="_blank" class="icon"
                 aria-label="Martin Stier's LinkedIn">
                 <i class="fab fa-linkedin"></i>
-            </div>
+            </a>
             <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
             <!-- </ul> -->
         </nav>
@@ -57,14 +68,14 @@
     <main>
 
         <div class="portrait">
-            <img src="files/MartinStierPortrait.jpg" alt="Martin Stier's portrait" class="image">
+            <img src="files/MartinStierPortrait.jpg" alt="Martin Stier's portrait" class="image" height="400px">
 
             <div class="selected-drop">
-                <button class="drop-button">
+                <button id="bio-drop" class="drop-button" data-target="bio">
                     <i class="fa-solid fa-caret-down"></i>&nbsp;&nbsp;Bio
                 </button>
 
-                <p class="default-text">
+                <p class="drop-text" style="display: block;">
                     I am a third year student studying <a href=https://cse.engin.umich.edu>Computer Science</a> at
                     the
                     University of Michigan. <br>
@@ -81,8 +92,7 @@
     </main>
 
     <footer>
-
-        <div class="dropdowns">
+        <div class="options">
 
             <button id="bio-drop" class="drop-button" data-target="bio">
                 <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Bio
@@ -99,79 +109,115 @@
                 outdoors.
             </p>
 
-        </div>
 
-        <button id="experience-drop" class="drop-button" data-target="experience">
-            <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Experience
-        </button>
 
-        <!-- <p class="drop-text" id="experience"> -->
-        <ul class="drop-text" id="experience">
-            <li>
-                University of Michigan Physics Department <br>
-                <i class="title">Teaching Assistant, Physics II</i>
-            </li>
-
-            <li>
-                Science Learning Center <br>
-                <i class="title">Study Group Leader, Calculus II &amp; Physics I</i>
-            </li>
-
-            <li>
-                Institute for Social Research <br>
-                <i class="title">Undergraduate Researcher</i>
-            </li>
-
-            <li>
-                Mind Body Studies Academy <br>
-                <i class="title">Web Administrator</i>
-            </li>
-
-            <li>
-                University of Michigan Transportation Research Institute (UMTRI) <br>
-                <i class="title">Undergraduate Research Assistant</i>
-            </li>
-
-        </ul>
-        <!-- </p> -->
-
-        <button id="research-drop" class="drop-button" data-target="research">
-            <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Research
-        </button>
-
-        <ul class="drop-text" id="research">
-            <li>
-                Institute for Social Research <br>
-                <i class="title">Investigating Associations Between Accessibility to Urban Green Spaces and Public
-                    Health Outcomes</i>
-            </li>
-
-            <li>
-                University of Michigan Transportation Research Institute <br>
-                <i class="title">Standardizing terms and measures, etc.</i>
-            </li>
-
-            <li>
-                University of Michigan Transportation Research Institute <br>
-                <i class="title">Bright screens = bad drivers?</i>
-        </ul>
-
-        <button id="projects-drop" class="drop-button" data-target="projects">
-            <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Projects
-        </button>
-
-        <ul class="drop-text" id="projects">
-            <li>
-
-            </li>
-        </ul>
-
-        <a href="files/Resume.pdf" target="_blank" style="text-decoration:none">
-            <button id="resume" class="resume-button">
-                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;
-                Resume
+            <button id="experience-drop" class="drop-button" data-target="experience">
+                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Experience
             </button>
-        </a>
+
+            <!-- <p class="drop-text" id="experience"> -->
+            <ul class="drop-text" id="experience">
+                <li>
+                    University of Michigan Physics Department <br>
+                    <i class="title">Teaching Assistant, Physics II</i>
+                </li><br>
+
+                <li>
+                    Science Learning Center <br>
+                    <i class="title">Study Group Leader, Calculus II &amp; Physics I</i>
+                </li><br>
+
+                <li>
+                    Institute for Social Research <br>
+                    <i class="title">Undergraduate Researcher</i>
+                </li><br>
+
+                <li>
+                    Mind Body Studies Academy <br>
+                    <i class="title">Web Administrator</i>
+                </li><br>
+
+                <li>
+                    University of Michigan Transportation Research Institute (UMTRI) <br>
+                    <i class="title">Undergraduate Research Assistant</i>
+                </li>
+
+            </ul>
+            <!-- </p> -->
+
+            <button id="research-drop" class="drop-button" data-target="research">
+                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Research
+            </button>
+
+            <ul class="drop-text" id="research">
+                <li>
+                    Institute for Social Research <br>
+                    <i class="title">
+                        <a href="https://ehp.niehs.nih.gov/doi/10.1289/isee.2024.1944" target="_blank">
+                            Investigating the Associations between Accessibility to Urban Green Spaces and Drug Overdose
+                            Rates</a>
+                    </i>
+                </li>
+
+                <br>
+
+                <li>
+                    University of Michigan Transportation Research Institute <br>
+                    <i class="title">
+                        <a href="https://www.sae.org/standards/content/j2944_201506/" target="_blank">
+                            Operational Definitions of Driving Performance Measures and Statistics</a>
+                        <a href="files/Stier_Jimenez_NCUR_Poster.pdf" target="_blank" class="poster-link">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </i>
+                    <!-- <p id="poster-explanation" class="tooltiptext">
+                        Poster for National Conference of Undergraduate Research
+                    </p> -->
+                </li>
+
+                <br>
+
+                <li>
+                    University of Michigan Transportation Research Institute <br>
+                    <i class="title">
+                        <a href="https://journals.sagepub.com/doi/abs/10.1177/10711813241264253" target="_blank">
+                            Interior Illumination Impact on Night Driving in a Driving Simulator</a>
+                    </i>
+            </ul>
+
+            <button id="projects-drop" class="drop-button" data-target="projects">
+                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Projects
+            </button>
+
+            <ul class="drop-text" id="projects">
+                <li>
+                    <a href="https://devpost.com/software/petecode" target="_blank">PeteCode</a> <br>
+                    <span class="technical-elements">React, FastAPI, Supabase, GroqCloud, ElevenLabs API,
+                        TypeScript</span>
+                </li><br>
+
+                <li>
+                    CPU Simulator <br>
+                    <span class="technical-elements">C, LC2k</span>
+                </li><br>
+
+                <li>
+                    Forum Post ML Classifier <br>
+                    <span class="technical-elements">C++</span>
+                </li><br>
+
+                <li>
+                    Personal Webpage <br>
+                    <span class="technical-elements">HTML, CSS, JavaScript</span>
+                </li>
+            </ul>
+
+            <a href="files/Resume.pdf" target="_blank" style="text-decoration:none">
+                <button id="resume" class="resume-button">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;
+                    Resume
+                </button>
+            </a>
     </footer>
 
 </body>

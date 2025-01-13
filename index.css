@@ -6,35 +6,42 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    min-height: 96vh;
+
+    justify-content: center;
 }
 
 header {
-    /* border: 2px solid red; */
     width: 50vw;
 
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+
+    /* border: 2px solid red; */
+
+    margin-right: 15px;
 }
 
 .name {
+    /* border: 2px solid red; */
+
+    flex: 1;
+
     flex-direction: column;
-    align-items: center;
+    align-items: bottom;
 
     position: relative;
     /* display: inline-block; */
-    cursor: help;
     font-size: xx-large;
 }
 
-.name .tooltiptext {
+.tooltiptext {
     font-size: 12px;
 
     visibility: hidden;
     display: none;
-
-    position: absolute;
-    top: 30px;
-    left: 50px;
 
     background-color: black;
     color: #fff;
@@ -45,12 +52,23 @@ header {
     padding: 5px;
 }
 
-.name:hover .tooltiptext {
+#name-pronounce {
+    position: absolute;
+    top: 42px;
+    left: 50px;
+}
+
+.fullname {
+    /* border: 2px solid red; */
+    cursor: help;
+}
+
+.fullname:hover .tooltiptext {
     visibility: visible;
     display: inline;
 }
 
-.name .tooltiptext::after {
+.tooltiptext::after {
     content: " ";
     position: absolute;
     bottom: 100%;
@@ -64,9 +82,7 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-
     align-items: center;
-
     gap: 7px;
 }
 
@@ -79,36 +95,23 @@ nav {
     opacity: 0.8;
 }
 
-main {
-    /* display: flex; */
-    /* align-items: center; */
-    /* position: relative; */
-}
-
 .portrait {
     padding: 10px;
 
     display: flex;
     /* flex-direction: row; */
 
+    /* border: 2px solid red; */
+
     width: 50vw;
 }
 
 .selected-drop {
     margin: 10px;
-}
-
-.default-text {
-    width: 50;
-
-    background-color: lightgrey;
-    border-radius: 6px;
-
-    padding: 10px 22px;
+    height: 300px
 }
 
 .portrait .image {
-    width: 20vw;
     border-radius: 6px;
 }
 
@@ -151,17 +154,39 @@ main {
 }
 
 .drop-text {
-    width: 50;
+    display: none;
 
     background-color: lightgrey;
     border-radius: 6px;
 
     padding: 10px 22px;
+    height: 105%;
 
-    display: none;
+    overflow: auto;
+}
+
+.title {
+    text-align: justify;
+}
+
+.title::after {
+    content: '';
+    width: 100%;
+}
+
+.options {
+    margin: 10px;
+
+    flex-direction: row;
 }
 
 footer {
+    display: flex;
     width: 50vw;
-    /* border: 2px solid red; */
+
+    justify-content: center;
+}
+
+.technical-elements {
+    font-style: italic;
 }
